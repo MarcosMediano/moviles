@@ -5,40 +5,37 @@ import "./style/Badge.css"
 
 class Badge extends Component{
     render(){
-        return(
-            <React.Fragment>
+        return (
+        <React.Fragment>
             <div className="Badge m-5">
-                <div className="Badge__header">
-                    <img src={HeaderBackground} alt="header_background"></img>
+                <div className="Badgeheader">
+                    <img src={this.props.header_picture} alt="header_background"/>
                 </div>
-                <div className="container mt-5 mb-1 Badge__userInfo ">
-                    <div className="Badge__userImage">
-                        <img src={ProfilePic} alt="Profile_picture"></img>
+                <div className="container mt-5 mb-1 BadgeuserInfo">
+                    <div className="BadgeuserImage">
+                        <img src={this.props.picture} alt="Profile_picture" />
                     </div>
-                    <h4 className="text-center mt-5" >
-                    Isabella Miller<i> 32</i>
-                    </h4>
-                    <p className="text-center">New York City</p>
+                    <h4 className="text-center">{this.props.name}<i>{this.props.name}</i></h4>
+                    <p className="text-center">{this.props.city}</p>
                 </div>
-                <div className="Badge_info container pt-3">
+                <div className="Badgeinfo container pt-3">
                     <div className="row">
                         <div className="col">
-                            <h4 className="text-center fw bold">80k</h4>
+                            <h4 className="text-center fw bold">{this.props.followers}</h4>
                             <p className="text-center">Followers</p>
                         </div>
                         <div className="col">
-                            <h4 className="text-center fw bold">803k</h4>
+                            <h4 className="text-center fw bold">{this.props.likes}</h4>
                             <p className="text-center">Likes</p>
                         </div>
                         <div className="col">
-                            <h4 className="text-center fw bold">1.5k</h4>
+                            <h4 className="text-center fw bold">{this.props.post}</h4>
                             <p className="text-center">Pictures</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </React.Fragment>
-        );
+        </React.Fragment>);
     }
 }
 export default Badge;
