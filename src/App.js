@@ -7,7 +7,7 @@ function App() {
   return (
     <React.Fragment>
       <Layout>
-        <Main></Main>
+        <Main title={"Welcome"}></Main>
       </Layout>
     </React.Fragment>
   );
