@@ -8,10 +8,10 @@ const Main=(props) =>{
         <React.Fragment>
             <div className="Main">
                 <div className="Main__content">
-                    <h1 className="Main__title">{props.tittle}</h1>
+                    <h1 className="Main__title">{props.title}</h1>
                     <Button contentText={"Login"}></Button>
                 </div>
-                <Hero h={"88vh"}></Hero>
+                <Hero h={"88vh"} foto={"https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Hero>
             </div>
         </React.Fragment>
     );
