@@ -12,8 +12,11 @@
 
 .Hero__color_filter{
     position: absolute;
-    background-color: rgba(0,90,42,0.6);
+    background-color: rgba(30, 139, 81, 0.87);
     width: 100%;
     z-index: 1;
     
 }
+
+
+
