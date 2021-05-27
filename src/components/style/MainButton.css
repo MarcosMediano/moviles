@@ -17,11 +17,11 @@
     padding-top: 5px;
 }
 
-.Button::hover{
+.Button:hover{
     background-color: white;
     border: 2px solid teal;
     font-weight: bold;
 }
-.Button::hover p{
+.Button:hover p{
     color: teal;
 }
