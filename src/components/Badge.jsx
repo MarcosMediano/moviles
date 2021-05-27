@@ -1,6 +1,5 @@
 import React, {Component} from 'react' 
-import HeaderBackground from '../images/badge_header.jpg'
-import ProfilePic from '../images/profile.jpg'
+
 import "./style/Badge.css"
 
 class Badge extends Component{
@@ -8,17 +7,17 @@ class Badge extends Component{
         return (
         <React.Fragment>
             <div className="Badge m-5">
-                <div className="Badgeheader">
+                <div className="Badge__header">
                     <img src={this.props.header_picture} alt="header_background"/>
                 </div>
                 <div className="container mt-5 mb-1 BadgeuserInfo">
-                    <div className="BadgeuserImage">
-                        <img src={this.props.picture} alt="Profile_picture" />
+                    <div className="Badge__userImage">
+                        <img src={this.props.profile_picture} alt="Profile_picture" />
                     </div>
-                    <h4 className="text-center">{this.props.name}<i>{this.props.name}</i></h4>
+                    <h4 className="text-center">{this.props.name}<i>{this.props.age}</i></h4>
                     <p className="text-center">{this.props.city}</p>
                 </div>
-                <div className="Badgeinfo container pt-3">
+                <div className="Badge__info container pt-3">
                     <div className="row">
                         <div className="col">
                             <h4 className="text-center fw bold">{this.props.followers}</h4>
