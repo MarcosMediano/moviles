@@ -1,0 +1,22 @@
+.SignForm{
+    width: 500px;
+    border: 1px solid lightgray;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.SignIn__button{
+    margin-top: 15px;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+
+.SignIn__button:hover{
+    background-color: #007336;
+    color: white;
+    font-weight: bold;
+}
