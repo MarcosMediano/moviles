@@ -32,3 +32,5 @@ class LoginForm extends Component{
         );
     }
 }
+
+export default LoginForm;
